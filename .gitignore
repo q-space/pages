@@ -117,3 +117,72 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# ------------------------------
+# Flutter / Dart
+# ------------------------------
+
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+pubspec.lock
+
+# iOS / Android build outputs
+ios/Pods/
+ios/Runner.xcworkspace/
+android/.gradle/
+android/app/build/
+
+# ------------------------------
+# Rust
+# ------------------------------
+
+/target/
+**/*.rs.bk
+
+# Keep Cargo.lock for binary applications
+# Remove the next line if this becomes a library crate
+Cargo.lock
+
+# ------------------------------
+# Environment / Secrets
+# ------------------------------
+
+.env
+.env.*
+*.key
+*.pem
+*.crt
+
+# ------------------------------
+# Logs
+# ------------------------------
+
+*.log
+
+# ------------------------------
+# IDE / Editors
+# ------------------------------
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------
+# OS Files
+# ------------------------------
+
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Temporary
+# ------------------------------
+
+tmp/
+temp/
